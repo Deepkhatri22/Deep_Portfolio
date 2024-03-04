@@ -1,0 +1,41 @@
+.skilldiv {
+    background: linear-gradient(to bottom right, #ff9d00 0%, #ef60a7 100%);
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10vh 0px;
+}
+
+.skilldiv h1{
+    font-family: "Anta", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 3rem;
+    color: white;
+}
+
+.skillcard{
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 0px 15px 0px rgb(71, 71, 71);
+}
+
+
+
+.skillcard h1{
+    font-family: "Anta", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 2rem;
+    color: black;
+}
