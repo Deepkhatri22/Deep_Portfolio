@@ -34,7 +34,7 @@ const Projects = () => {
           coverflowEffect={{
             rotate: 50,
             stretch: 0,
-            depth: 100,
+            depth: 150,
             modifier: 1,
             slideShadows: true,
           }}
@@ -84,22 +84,15 @@ const Projects = () => {
               <span className='text-[200px] text-[#78cff5]'><DiJqueryLogo /> </span>
             </div>
           </SwiperSlide>
+        
           <SwiperSlide>
             <div className="skillcard">
               <h1>Git</h1>
               <span className='text-[200px] text-[#F1502F]'><FaGitAlt /> </span>
             </div>
           </SwiperSlide>
-          {/* <SwiperSlide>
-            <div className="skillcard">
-              <h1>Java</h1>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="skillcard">
-              <h1>AWS</h1>
-            </div>
-          </SwiperSlide> */}
+         
+          
          
         </Swiper>
       </div>
