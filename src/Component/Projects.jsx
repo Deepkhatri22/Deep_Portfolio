@@ -25,7 +25,7 @@ const Projects = () => {
           coverflowEffect={{
             rotate: 50,
             stretch: 0,
-            depth: 100,
+            depth: 150,
             modifier: 1,
             slideShadows: true,
           }}
@@ -47,7 +47,7 @@ const Projects = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="projectcard text-center">
+            <div onClick={() => window.open('https://deepkhatri-portfolio.vercel.app/','_blank')} className="projectcard text-center">
               <h1 className='cursor-pointer hover:text-gray-600'>Portfolio</h1>
             </div>
           </SwiperSlide>
@@ -62,26 +62,6 @@ const Projects = () => {
             </div>
           </SwiperSlide>
          
-          {/* <SwiperSlide>
-            <div className="projectcard">
-              <h1>Project 6</h1>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="projectcard">
-              <h1>Project 7</h1>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="projectcard">
-              <h1>Project 8</h1>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="projectcard">
-              <h1>Project 9</h1>
-            </div>
-          </SwiperSlide> */}
         </Swiper>
       </div>
     </div>
