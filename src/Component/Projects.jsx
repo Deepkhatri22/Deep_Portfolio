@@ -8,12 +8,18 @@ import 'swiper/css/pagination';
 
 import './project.css';
 import './ProjectSwiper.css';
+import { LuListTodo } from "react-icons/lu";
+import { IoMdChatbubbles } from "react-icons/io";
+import { FaUserGraduate } from "react-icons/fa";
+import { TiWeatherPartlySunny } from "react-icons/ti";
+import { FaSpotify } from "react-icons/fa";
 
 // import required modules
 import { EffectCoverflow, Pagination } from 'swiper/modules';
 const Projects = () => {
   return (
-    <div className="projectdiv" id='project'>
+    <div className="projectdiv bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500" id='project'>
+    {/* <div className="projectdiv bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%" id='project'> */}
       <h1>My Projects</h1>
 
       <div className='projectswipercontainer'>
@@ -38,27 +44,32 @@ const Projects = () => {
         >
           <SwiperSlide>
             <div className="projectcard text-center">
-              <h1 className='cursor-pointer hover:text-gray-600'>TO-DO List Using React</h1>
+              <h1 className='cursor-pointer hover:text-gray-600'>TO-DO List Using React </h1>
+              <span className='text-[80px]'><LuListTodo/> </span>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div onClick={() => window.open('https://livewebchat.onrender.com/', '_blank')} className="projectcard text-center">
               <h1 className='cursor-pointer hover:text-gray-600'>Live Webchat App</h1>
+              <span className='text-[80px]'><IoMdChatbubbles/> </span>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div onClick={() => window.open('https://deepkhatri-portfolio.vercel.app/','_blank')} className="projectcard text-center">
               <h1 className='cursor-pointer hover:text-gray-600'>Portfolio</h1>
+              <span className='text-[80px]'><FaUserGraduate/> </span>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div onClick={() => window.open('https://weather-app-by-dk.vercel.app/', '_blank')} className="projectcard text-center">
               <h1 className='cursor-pointer hover:text-gray-600'>Weather App using React</h1>
+              <span className='text-[80px]'><TiWeatherPartlySunny/> </span>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div onClick={() => window.open('https://spotify-clone-2clh.onrender.com', '_blank')} className="projectcard text-center">
               <h1 className='cursor-pointer hover:text-gray-600'>Spotify Clone</h1>
+              <span className='text-[80px]'><FaSpotify/> </span>
             </div>
           </SwiperSlide>
          

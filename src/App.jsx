@@ -7,6 +7,7 @@ import HomeSection from './Component/HomeSection'
 import Footer from './Component/Footer'
 import Skills from './Component/Skills'
 import Projects from './Component/Projects'
+import Education from './Component/Education'
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
       <Navbar />
       <Home />
       <About />
+      <Education />
       <Skills />
       <Projects />
       <HomeSection />

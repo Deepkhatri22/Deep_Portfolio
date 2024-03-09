@@ -13,6 +13,10 @@ const menuItems = [
     href: '#about',
   },
   {
+    name: 'Education',
+    href: '#education',
+  },
+  {
     name: 'Skills',
     href: '#skills',
   },
@@ -24,6 +28,10 @@ const menuItems = [
     name: 'Contact',
     href: '#contact',
   },
+  {
+    name: 'Resume',
+    href: 'Resume.pdf',
+  },
 ]
 
 export function Navbar() {
@@ -32,6 +40,8 @@ export function Navbar() {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen)
   }
+
+
 
   return (
     <div className="z-50 w-full bg-transparent fixed">
@@ -53,6 +63,8 @@ export function Navbar() {
           </span>
           <span className="font-bold text-white font-serif">DeepKhatri</span>
         </div>
+        {/* <div className="lg:flex-grow lg:flex lg:items-start lg:justify-end hidden">
+          <ul className="lg:ml-12 inline-flex space-x-8"> */}
         <div className="hidden grow items-start lg:flex">
           <ul className="ml-12 inline-flex space-x-8">
             {menuItems.map((item) => (
