@@ -3,14 +3,17 @@ import './homesection.css'
 
 function HomeSection() {
 
+    
+
     return (
         <>
-            <div className="sectionoutermost">
+
+            <div div className="sectionoutermost" >
                 <div className="left">
                     <p>If you are Looking for a web developer or need help with your project then feel free to contact me at <span>deepkhatri934@gmail.com</span>
                     </p>
                     <a
-                        href="/Resume.pdf" // Assuming your resume file is named 'Resume.pdf' in the public folder
+                        href="/Resume.pdf"
                         className='text-white bg-purple-500 rounded-md w-40 mt-5 p-2 text-center block'
                         download="Resume.pdf"
                     >
@@ -25,7 +28,7 @@ function HomeSection() {
                         together
                     </h1>
                 </div>
-            </div>
+            </div >
 
         </>
     )
