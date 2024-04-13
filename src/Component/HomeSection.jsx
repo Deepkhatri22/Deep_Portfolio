@@ -8,7 +8,7 @@ function HomeSection() {
     return (
         <>
 
-            <div div className="sectionoutermost" >
+            <div className="sectionoutermost" >
                 <div className="left">
                     <p>If you are Looking for a web developer or need help with your project then feel free to contact me at <span>deepkhatri934@gmail.com</span>
                     </p>
