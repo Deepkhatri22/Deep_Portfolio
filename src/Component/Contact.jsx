@@ -1,45 +1,45 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const Contact = () => {
     const form = useRef();
+    const [isSubmitting, setIsSubmitting] = useState(false); // State variable to track submission status
 
-    const sendEmail = (e) => {
+    const sendEmail = async (e) => {
         e.preventDefault();
+        setIsSubmitting(true); // Set submitting to true when the form is being submitted
 
-        emailjs
-            .sendForm('service_rfm5lew', 'template_w4br9b8', form.current, {
+        try {
+            await emailjs.sendForm('service_rfm5lew', 'template_w4br9b8', form.current, {
                 publicKey: 'soAc_X15QMMhzGSX1',
-            })
-            .then(
-                () => {
-                    console.log('SUCCESS!');
-                    form.current.reset();
-                    toast.success('Message sent successfully!', {
-                        position: 'top-right',
-                        autoClose: 3000,
-                        hideProgressBar: false,
-                        closeOnClick: true,
-                        pauseOnHover: true,
-                        draggable: true,
-                        progress: undefined,
-                    });
-                },
-                (error) => {
-                    console.log('FAILED...', error.text);
-                    toast.error('Failed to send message. Please try again.', {
-                        position: 'top-right',
-                        autoClose: 3000,
-                        hideProgressBar: false,
-                        closeOnClick: true,
-                        pauseOnHover: true,
-                        draggable: true,
-                        progress: undefined,
-                    });
-                },
-            );
+            });
+            console.log('SUCCESS!');
+            form.current.reset();
+            toast.success('Message sent successfully!', {
+                position: 'top-right',
+                autoClose: 3000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+            });
+        } catch (error) {
+            console.log('FAILED...', error.text);
+            toast.error('Failed to send message. Please try again.', {
+                position: 'top-right',
+                autoClose: 3000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+            });
+        } finally {
+            setIsSubmitting(false); // Set submitting to false after request is completed
+        }
     };
 
     return (
@@ -67,7 +67,13 @@ const Contact = () => {
                             <label htmlFor="message" className="block mb-2 text-sm font-medium text-gray-400">Your message</label>
                             <textarea id="message" name='message' rows="6" className="block p-2.5 w-full text-sm rounded-lg shadow-sm border focus:ring-primary-500 focus:border-primary-500 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-primary-500 focus:border-primary-500" placeholder="Leave a comment or query..."></textarea>
                         </div>
-                        <button type="submit" className="py-3 bg-white px-5 font-medium text-center text-black rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 bg-primary-600 hover:bg-primary-700 focus:ring-primary-800">Send message</button>
+                        <button 
+                            type="submit" 
+                            disabled={isSubmitting} // Disable the button when submitting
+                            className={`py-3 bg-white px-5 font-medium text-center text-black rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 bg-primary-600 hover:bg-primary-700 focus:ring-primary-800 ${isSubmitting ? 'opacity-50 cursor-not-allowed' : ''}`} // Apply opacity and cursor styles when disabled
+                        >
+                            {isSubmitting ? 'Sending...' : 'Send message'}
+                        </button>
                     </form>
                 </div>
             </div>
