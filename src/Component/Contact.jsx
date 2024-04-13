@@ -14,6 +14,10 @@ const Contact = () => {
         try {
             await emailjs.sendForm('service_rfm5lew', 'template_w4br9b8', form.current, {
                 publicKey: 'soAc_X15QMMhzGSX1',
+
+                // .sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, {
+                //     publicKey: 'YOUR_PUBLIC_KEY',
+
             });
             console.log('SUCCESS!');
             form.current.reset();

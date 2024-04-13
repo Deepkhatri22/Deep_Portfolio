@@ -13,6 +13,7 @@ import { IoMdChatbubbles } from "react-icons/io";
 import { FaUserGraduate } from "react-icons/fa";
 import { TiWeatherPartlySunny } from "react-icons/ti";
 import { FaSpotify } from "react-icons/fa";
+import { CgWebsite } from "react-icons/cg";
 
 // import required modules
 import { EffectCoverflow, Pagination } from 'swiper/modules';
@@ -43,8 +44,8 @@ const Projects = () => {
 
         >
           <SwiperSlide>
-            <div className="projectcard text-center">
-              <h1 className='cursor-pointer hover:text-gray-600'>TO-DO List Using React </h1>
+            <div onClick={() => window.open('https://task-manager-by-dk.vercel.app/', '_blank')} className="projectcard text-center">
+              <h1 className='cursor-pointer hover:text-gray-600'>Task Manager Using React </h1>
               <span className='text-[80px]'><LuListTodo/> </span>
             </div>
           </SwiperSlide>
@@ -64,6 +65,12 @@ const Projects = () => {
             <div onClick={() => window.open('https://weather-app-by-dk.vercel.app/', '_blank')} className="projectcard text-center">
               <h1 className='cursor-pointer hover:text-gray-600'>Weather App using React</h1>
               <span className='text-[80px]'><TiWeatherPartlySunny/> </span>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div onClick={() => window.open('https://resplendent-youtiao-d7ea6c.netlify.app/', '_blank')} className="projectcard text-center">
+              <h1 className='cursor-pointer hover:text-gray-600'>Landing Page using React</h1>
+              <span className='text-[80px]'><CgWebsite/> </span>
             </div>
           </SwiperSlide>
           <SwiperSlide>
