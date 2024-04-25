@@ -17,6 +17,8 @@ import { SiTailwindcss } from "react-icons/si";
 import { FaBootstrap } from "react-icons/fa6";
 import { FaGitAlt } from "react-icons/fa";
 import { DiJqueryLogo } from "react-icons/di";
+import { FaGithub } from "react-icons/fa";
+
 
 // import required modules
 import { EffectCoverflow, Pagination } from 'swiper/modules';
@@ -89,6 +91,12 @@ const Projects = () => {
             <div className="skillcard">
               <h1>Git</h1>
               <span className='text-[200px] text-[#F1502F]'><FaGitAlt /> </span>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="skillcard">
+              <h1>GitHub</h1>
+              <span className='text-[200px] '><FaGithub /> </span>
             </div>
           </SwiperSlide>
          
