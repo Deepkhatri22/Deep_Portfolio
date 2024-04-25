@@ -14,6 +14,9 @@ import { FaUserGraduate } from "react-icons/fa";
 import { TiWeatherPartlySunny } from "react-icons/ti";
 import { FaSpotify } from "react-icons/fa";
 import { CgWebsite } from "react-icons/cg";
+import { RiOpenaiFill } from "react-icons/ri";
+import { FaApple } from "react-icons/fa";
+
 
 // import required modules
 import { EffectCoverflow, Pagination } from 'swiper/modules';
@@ -59,6 +62,18 @@ const Projects = () => {
             <div onClick={() => window.open('https://deepkhatri-portfolio.vercel.app/','_blank')} className="projectcard text-center">
               <h1 className='cursor-pointer hover:text-gray-600'>Portfolio</h1>
               <span className='text-[80px]'><FaUserGraduate/> </span>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div onClick={() => window.open('https://ai-summarizer-by-dk.vercel.app/','_blank')} className="projectcard text-center">
+              <h1 className='cursor-pointer hover:text-gray-600'>AI Article Summarizer</h1>
+              <span className='text-[90px]'><RiOpenaiFill/> </span>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div onClick={() => window.open('https://iphone15pro-clone-by-dk.vercel.app/','_blank')} className="projectcard text-center">
+              <h1 className='cursor-pointer hover:text-gray-600'>IPhone clone Website</h1>
+              <span className='text-[90px]'><FaApple/> </span>
             </div>
           </SwiperSlide>
           <SwiperSlide>
