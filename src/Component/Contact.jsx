@@ -72,13 +72,13 @@ const Contact = () => {
                         className="space-y-8"
                         initial={{ opacity: 0, y: 50 }}
                         whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 1, ease: "easeOut", delay: 0.4 }}
+                        transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
                         viewport={{ amount: 0.8 }}
                     >
                         <motion.div
                             initial={{ opacity: 0, y: 50 }}
                             whileInView={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 1, ease: "easeOut", delay: 0.6 }}
+                            transition={{ duration: 1, ease: "easeOut", delay: 0.4 }}
                             viewport={{ amount: 0.8 }}
                         >
                             <label htmlFor="name" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your Name</label>
@@ -87,7 +87,7 @@ const Contact = () => {
                         <motion.div
                             initial={{ opacity: 0, y: 50 }}
                             whileInView={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 1, ease: "easeOut", delay: 0.8 }}
+                            transition={{ duration: 1, ease: "easeOut", delay: 0.5 }}
                             viewport={{ amount: 0.8 }}
                         >
                             <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your Email</label>
@@ -96,7 +96,7 @@ const Contact = () => {
                         <motion.div
                             initial={{ opacity: 0, y: 50 }}
                             whileInView={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 1, ease: "easeOut", delay: 1 }}
+                            transition={{ duration: 1, ease: "easeOut", delay: 0.6 }}
                             viewport={{ amount: 0.8 }}
                         >
                             <label htmlFor="subject" className="block mb-2 text-sm font-medium text-gray-300">Subject</label>
@@ -106,7 +106,7 @@ const Contact = () => {
                             className="sm:col-span-2"
                             initial={{ opacity: 0, y: 50 }}
                             whileInView={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 1, ease: "easeOut", delay: 1.2 }}
+                            transition={{ duration: 1, ease: "easeOut", delay: 0.7 }}
                             viewport={{ amount: 0.8 }}
                         >
                             <label htmlFor="message" className="block mb-2 text-sm font-medium text-gray-400">Your message</label>
@@ -118,7 +118,7 @@ const Contact = () => {
                             className={`hover:bg-purple-500 hover:text-white  py-3 bg-white px-5 font-medium text-center text-black rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 bg-primary-600 hover:bg-primary-700 focus:ring-primary-800 ${isSubmitting ? 'opacity-50 cursor-not-allowed' : ''}`}
                             initial={{ opacity: 0, y: 50 }}
                             whileInView={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 1, ease: "easeOut", delay: 1 }}
+                            transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
                             viewport={{ amount: 0.8 }}
                         >
                             {isSubmitting ? 'Sending...' : 'Send message'}

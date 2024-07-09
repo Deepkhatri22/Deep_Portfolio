@@ -61,9 +61,10 @@ function Education() {
               animate={{ opacity: isVisible ? 1 : 0, y: isVisible ? 0 : 50 }}
               transition={{ duration: 1, delay: 0.6, ease: "easeOut" }}
             >
+            
               <p className="text-justify font">
-                I am currently enrolled in a Bachelor's in Computer Science & Engineering at Shri S'ad Vidyamandal Institute of technology, Bharuch, India, working towards my undergraduate degree.
-                CGPA : 8.96
+              I have completed my bachelor's degree in Computer Science and Engineering at Shri S'ad Vidyamandal Institute of technology, Bharuch, India. <br />
+              <li>CGPA : 8.96</li>
               </p>
               <ul className="grid gap-2 text-white list-disc list-outside sm:grid-cols-2 font">
                 <li>Intern at BIT INFOTECH, VADODARA, where I gained hands-on experience in web development. January 2024 - Present</li>
