@@ -32,6 +32,7 @@ const Projects = () => {
           effect={'coverflow'}
           grabCursor={true}
           centeredSlides={true}
+          initialSlide={3}
           slidesPerView={'auto'}
           coverflowEffect={{
             rotate: 50,
@@ -39,6 +40,7 @@ const Projects = () => {
             depth: 150,
             modifier: 1,
             slideShadows: true,
+            
           }}
           pagination={true}
           modules={[EffectCoverflow, Pagination]}
@@ -96,7 +98,7 @@ const Projects = () => {
           <SwiperSlide>
             <div className="skillcard">
               <h1>GitHub</h1>
-              <span className='text-[200px] '><FaGithub /> </span>
+              <span className='text-[200px] text-white shadow-sm '><FaGithub /> </span>
             </div>
           </SwiperSlide>
          

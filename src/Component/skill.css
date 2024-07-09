@@ -1,5 +1,6 @@
 .skilldiv {
-    background: linear-gradient(to bottom right, #ff9d00 0%, #ef60a7 100%);
+    /* background: linear-gradient(to bottom right, #ff9d00 0%, #ef60a7 100%); */
+    background: #171717;
     width: 100%;
     min-height: 100vh;
     display: flex;
@@ -15,18 +16,18 @@
     font-weight: 300;
     font-style: normal;
     font-size: 3rem;
-    color: white;
+    color:#0644ff;
 }
 
 .skillcard{
-    background-color: white;
+    background-color: black;
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    box-shadow: 2px 0px 15px 0px rgb(71, 71, 71);
+    box-shadow: 5px 5px 15px 5px rgb(71, 71, 71);
 }
 
 
@@ -37,5 +38,5 @@
     font-weight: 300;
     font-style: normal;
     font-size: 2rem;
-    color: black;
+    color: white;
 }

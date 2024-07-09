@@ -22,7 +22,8 @@ import { FaApple } from "react-icons/fa";
 import { EffectCoverflow, Pagination } from 'swiper/modules';
 const Projects = () => {
   return (
-    <div className="projectdiv bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500" id='project'>
+    <div className="projectdiv bg-[#171717]" id='project'>
+    {/* <div className="projectdiv bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500" id='project'> */}
     {/* <div className="projectdiv bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%" id='project'> */}
       <h1>My Projects</h1>
 
@@ -31,6 +32,7 @@ const Projects = () => {
           effect={'coverflow'}
           grabCursor={true}
           centeredSlides={true}
+          initialSlide={3}
           slidesPerView={'auto'}
           coverflowEffect={{
             rotate: 50,
@@ -48,50 +50,50 @@ const Projects = () => {
         >
           <SwiperSlide>
             <div onClick={() => window.open('https://task-manager-by-dk.vercel.app/', '_blank')} className="projectcard text-center">
-              <h1 className='cursor-pointer hover:text-gray-600'>Task Manager Using React </h1>
-              <span className='text-[80px]'><LuListTodo/> </span>
+              <h1 className='cursor-pointer hover:text-gray-500'>Task Manager Using React </h1>
+              <span className='text-[80px] text-white'><LuListTodo/> </span>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div onClick={() => window.open('https://livewebchat.onrender.com/', '_blank')} className="projectcard text-center">
-              <h1 className='cursor-pointer hover:text-gray-600'>Live Webchat App</h1>
-              <span className='text-[80px]'><IoMdChatbubbles/> </span>
+              <h1 className='cursor-pointer hover:text-gray-500'>Live Webchat App</h1>
+              <span className='text-[80px] text-white'><IoMdChatbubbles/> </span>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div onClick={() => window.open('https://deepkhatri-portfolio.vercel.app/','_blank')} className="projectcard text-center">
-              <h1 className='cursor-pointer hover:text-gray-600'>Portfolio</h1>
-              <span className='text-[80px]'><FaUserGraduate/> </span>
+              <h1 className='cursor-pointer hover:text-gray-500'>Portfolio</h1>
+              <span className='text-[80px] text-white'><FaUserGraduate/> </span>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div onClick={() => window.open('https://ai-summarizer-by-dk.vercel.app/','_blank')} className="projectcard text-center">
-              <h1 className='cursor-pointer hover:text-gray-600'>AI Article Summarizer</h1>
-              <span className='text-[90px]'><RiOpenaiFill/> </span>
+              <h1 className='cursor-pointer  hover:text-gray-500'>AI Article Summarizer</h1>
+              <span className='text-[90px] text-white'><RiOpenaiFill/> </span>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div onClick={() => window.open('https://iphone15pro-clone-by-dk.vercel.app/','_blank')} className="projectcard text-center">
-              <h1 className='cursor-pointer hover:text-gray-600'>IPhone clone Website</h1>
-              <span className='text-[90px]'><FaApple/> </span>
+              <h1 className='cursor-pointer hover:text-gray-500'>IPhone clone Website</h1>
+              <span className='text-[90px] text-white'><FaApple/> </span>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div onClick={() => window.open('https://weather-app-by-dk.vercel.app/', '_blank')} className="projectcard text-center">
-              <h1 className='cursor-pointer hover:text-gray-600'>Weather App using React</h1>
-              <span className='text-[80px]'><TiWeatherPartlySunny/> </span>
+              <h1 className='cursor-pointer hover:text-gray-500'>Weather App using React</h1>
+              <span className='text-[80px] text-white'><TiWeatherPartlySunny/> </span>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div onClick={() => window.open('https://resplendent-youtiao-d7ea6c.netlify.app/', '_blank')} className="projectcard text-center">
-              <h1 className='cursor-pointer hover:text-gray-600'>Landing Page using React</h1>
-              <span className='text-[80px]'><CgWebsite/> </span>
+              <h1 className='cursor-pointer hover:text-gray-500'>Landing Page using React</h1>
+              <span className='text-[80px] text-white'><CgWebsite/> </span>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div onClick={() => window.open('https://spotify-clone-2clh.onrender.com', '_blank')} className="projectcard text-center">
-              <h1 className='cursor-pointer hover:text-gray-600'>Spotify Clone</h1>
-              <span className='text-[80px]'><FaSpotify/> </span>
+              <h1 className='cursor-pointer hover:text-gray-500'>Spotify Clone</h1>
+              <span className='text-[80px] text-white'><FaSpotify/> </span>
             </div>
           </SwiperSlide>
          
