@@ -49,7 +49,7 @@ function Education() {
               animate={{ opacity: isVisible ? 1 : 0, y: isVisible ? 0 : 50 }}
               transition={{ duration: 1, delay: 0.4, ease: "easeOut" }}
             >
-              <h3 className="text-2xl text-white font-semibold tracking-tight">Bachelor of Engineering in Computer Science & Engineering</h3>
+              <h3 className="text-2xl font text-white font-semibold tracking-tight">Bachelor of Engineering in Computer Science & Engineering</h3>
               <p className="text-white font">Shri S'ad Vidyamandal Institute of Technology, Bharuch</p>
               <p className="text-white font">Gujarat Technological University.</p>
               <p className="text-white font">October 2020 - June 2024</p>
@@ -78,7 +78,7 @@ function Education() {
               animate={{ opacity: isVisible ? 1 : 0, y: isVisible ? 0 : 50 }}
               transition={{ duration: 1, delay: 0.8, ease: "easeOut" }}
             >
-              <h3 className="text-2xl text-white font-semibold tracking-tight">HSC • Jay Ambe group of schools</h3>
+              <h3 className="text-2xl text-white font font-semibold tracking-tight">HSC • Jay Ambe group of schools</h3>
               <p className="text-white font">Gujarat Secondary and Higher Secondary Education Board</p>
               <p className="text-white font">Science Stream • Jun 2019 - Mar 2020</p>
             </motion.div>
@@ -101,7 +101,7 @@ function Education() {
               animate={{ opacity: isVisible ? 1 : 0, y: isVisible ? 0 : 50 }}
               transition={{ duration: 1, delay: 1.2, ease: "easeOut" }}
             >
-              <h3 className="text-2xl font-semibold tracking-tight text-white">SSC • Jay Ambe group of schools</h3>
+              <h3 className="text-2xl font-semibold font tracking-tight text-white">SSC • Jay Ambe group of schools</h3>
               <p className="text-white font">Gujarat Secondary and Higher Secondary Education Board</p>
               <p className="text-white font">Jun 2017 - Mar 2018</p>
             </motion.div>
