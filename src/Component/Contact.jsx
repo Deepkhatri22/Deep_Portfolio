@@ -115,7 +115,7 @@ const Contact = () => {
                         <motion.button
                             type="submit"
                             disabled={isSubmitting}
-                            className={`py-3 bg-white px-5 font-medium text-center text-black rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 bg-primary-600 hover:bg-primary-700 focus:ring-primary-800 ${isSubmitting ? 'opacity-50 cursor-not-allowed' : ''}`}
+                            className={`hover:bg-purple-500 hover:text-white  py-3 bg-white px-5 font-medium text-center text-black rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 bg-primary-600 hover:bg-primary-700 focus:ring-primary-800 ${isSubmitting ? 'opacity-50 cursor-not-allowed' : ''}`}
                             initial={{ opacity: 0, y: 50 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 1, ease: "easeOut", delay: 1.4 }}
