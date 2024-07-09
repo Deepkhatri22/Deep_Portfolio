@@ -31,7 +31,7 @@ const Home = () => {
                 initial={{ opacity: 0, y: 150 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, ease: "easeOut" }}
-                viewport={{ amount: 0.8 }}
+                viewport={{ amount: 0.6 }}
                 src="/avatar.png" className="mainimg" alt="main Image" />
             {/* <img src="/avatar.png" className="mainimg" alt="main Image"/> */}
             <div className="maintextdiv">
