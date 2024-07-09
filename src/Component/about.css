@@ -21,11 +21,11 @@
 
 .about .textdiv h1 {
     font-family: "Anta", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
+    /* font-optical-sizing: auto; */
+    font-weight: 300;   
     font-style: normal;
-    font-size: 4rem;
-    color: black;
+    font-size: 3rem;
+    color: #0644ff;
 }
 
 .about .textdiv p{

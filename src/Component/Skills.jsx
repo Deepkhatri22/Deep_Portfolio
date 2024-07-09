@@ -1,12 +1,10 @@
 "use client"
 import React from 'react';
-
-// Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
-
+import { motion } from 'framer-motion';
 import './skill.css'
 import './ProjectSwiper.css';
 import { FaHtml5 } from "react-icons/fa6";
@@ -25,7 +23,13 @@ import { EffectCoverflow, Pagination } from 'swiper/modules';
 const Projects = () => {
   return (
     <div className="skilldiv" id='skills'>
-      <h1>My Skills</h1>
+      <motion.h1
+       initial={{ opacity: 0, y: 50 }}
+       whileInView={{ opacity: 1, y: 0 }}
+       transition={{ duration: 1, ease: "easeOut" }}
+       viewport={{ amount: 0.8 }}>
+        My Skills
+        </motion.h1>
 
       <div className='projectswipercontainer'>
         <Swiper

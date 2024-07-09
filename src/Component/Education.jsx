@@ -28,7 +28,7 @@ function Education() {
   }, []);
 
   return (
-    <section className="education w-full pt-12 md:pt-24 lg:pt-32 pb-14 bg-[#171717]" id='education'>
+    <section className="education w-full pt-12 md:pt-24 lg:pt-32 pb-14 bg-[#000415]" id='education'>
       <div className="container px-4 md:px-6">
         <div className="space-y-12">
           {/* Animation for the heading */}
@@ -38,7 +38,7 @@ function Education() {
             animate={{ opacity: isVisible ? 1 : 0, x: isVisible ? 0 : -50 }}
             transition={{ duration: 1, delay: 0.2, ease: "easeOut" }}
           >
-            <h1 className="heading text-4xl font-bold tracking-tighter text-[#0644ff] sm:text-5xl">My Academic Journey</h1>
+            <h1 className="heading text-[3rem] tracking-tighter text-[#0644ff] sm:text-[3rem]">My Academic Journey</h1>
           </motion.div>
 
           <div className="grid gap-12 lg:grid-cols-2">

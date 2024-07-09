@@ -30,9 +30,9 @@ import './about.css';
 const About = () => {
     return (
         <>
-            <div className="about bg-purple-300" id='about'>
+            <div className="about bg-[#000415]" id='about'>
                 <motion.div
-                    className="textdiv"
+                    className="textdiv text-white"
                     initial={{ opacity: 0, x: -50 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 1, ease: "easeOut" }}

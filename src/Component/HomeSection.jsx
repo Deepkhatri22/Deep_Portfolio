@@ -55,7 +55,7 @@ function HomeSection() {
                     <p>If you are looking for a web developer or need help with your project then feel free to contact me at <span>deepkhatri934@gmail.com</span></p>
                     <a
                         href="/Resume.pdf"
-                        className='text-white bg-purple-500 rounded-md w-40 mt-5 p-2 text-center block'
+                        className='text-white btn hover:font-bold hover:text-black bg-purple-500 rounded-md w-40 mt-5 p-2 text-center block'
                         download="Resume.pdf"
                     >
                         RESUME
