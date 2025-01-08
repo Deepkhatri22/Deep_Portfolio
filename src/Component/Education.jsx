@@ -67,7 +67,7 @@ function Education() {
               <li>CGPA : 8.96</li>
               </p>
               <ul className="grid gap-2 text-white list-disc list-outside sm:grid-cols-2 font">
-                <li>Intern at BIT INFOTECH, VADODARA, where I gained hands-on experience in web development. January 2024 - Present</li>
+                <li>Intern at BIT INFOTECH, VADODARA, where I gained hands-on experience in web development. January 2024 - April 2024 </li>
                 <li>Intern at PARAM CONSULTING SERVICES, VADODARA. July 2023 - August 2023</li>
               </ul>
             </motion.div>
