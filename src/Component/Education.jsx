@@ -49,6 +49,30 @@ function Education() {
               animate={{ opacity: isVisible ? 1 : 0, y: isVisible ? 0 : 50 }}
               transition={{ duration: 1, delay: 0.4, ease: "easeOut" }}
             >
+              <h3 className="text-2xl font text-white font-semibold tracking-tight">BitFront Infotech</h3>
+              <p className="text-white font">Surat</p>
+              <p className="text-white font">April 2025 - Present</p>
+            </motion.div>
+
+            <motion.div
+              className="space-y-4 text-white"
+              initial={{ opacity: 0, y: 50 }}
+              animate={{ opacity: isVisible ? 1 : 0, y: isVisible ? 0 : 50 }}
+              transition={{ duration: 1, delay: 0.6, ease: "easeOut" }}
+            >
+            
+              <p className="text-justify font">
+              I'm currently working as a Frontend Developer, where I primarily work with React.js and Next.js technologies to build responsive, high-performance web applications and user interfaces.<br />
+             
+              </p>
+             
+            </motion.div>
+            <motion.div
+              className="space-y-2"
+              initial={{ opacity: 0, y: 50 }}
+              animate={{ opacity: isVisible ? 1 : 0, y: isVisible ? 0 : 50 }}
+              transition={{ duration: 1, delay: 0.4, ease: "easeOut" }}
+            >
               <h3 className="text-2xl font text-white font-semibold tracking-tight">Bachelor of Engineering in Computer Science & Engineering</h3>
               <p className="text-white font">Shri S'ad Vidyamandal Institute of Technology, Bharuch</p>
               <p className="text-white font">Gujarat Technological University.</p>
