@@ -50,7 +50,7 @@ function Education() {
               transition={{ duration: 1, delay: 0.4, ease: "easeOut" }}
             >
               <h3 className="text-2xl font text-white font-semibold tracking-tight">BitFront Infotech</h3>
-              <p className="text-white font">Surat</p>
+              <p className="text-white font">Surat (Remote)</p>
               <p className="text-white font">April 2025 - December 2025</p>
             </motion.div>
 
