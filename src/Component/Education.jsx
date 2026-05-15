@@ -51,7 +51,7 @@ function Education() {
             >
               <h3 className="text-2xl font text-white font-semibold tracking-tight">BitFront Infotech</h3>
               <p className="text-white font">Surat</p>
-              <p className="text-white font">April 2025 - Present</p>
+              <p className="text-white font">April 2025 - December 2025</p>
             </motion.div>
 
             <motion.div
@@ -62,7 +62,7 @@ function Education() {
             >
             
               <p className="text-justify font">
-              I'm currently working as a Frontend Developer, where I primarily work with React.js and Next.js technologies to build responsive, high-performance web applications and user interfaces.<br />
+              Worked as a Frontend Developer using React.js, where I developed responsive user interfaces, integrated APIs, built reusable components, improved application performance, optimized frontend workflows, and collaborated on creating scalable and user-friendly web applications with modern development practices and clean UI implementation.<br />
              
               </p>
              
