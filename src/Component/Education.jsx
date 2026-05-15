@@ -62,7 +62,7 @@ function Education() {
             >
             
               <p className="text-justify font">
-              Worked as a Frontend Developer using React.js, where I developed responsive user interfaces, integrated APIs, built reusable components, improved application performance, optimized frontend workflows, and collaborated on creating scalable and user-friendly web applications with modern development practices and clean UI implementation.<br />
+              Worked as a Frontend Developer using React.js, where I developed responsive user interfaces, integrated APIs, built reusable components, improved application performance, optimized frontend workflows, and collaborated on creating scalable and user-friendly web applications with modern development practices and clean UI implementation. <br />
              
               </p>
              
